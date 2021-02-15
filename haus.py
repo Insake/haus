@@ -17,20 +17,22 @@
 #     print("Удачного дня")
 #
 # # 4.Aufgabe
-a = (input("Введите первое число :"))
-b = (input("Введите второе число :"))
+a = float(int(input("Введите первое число :")))
+b = float(int(input("Введите второе число :")))
 c = input("Введите знак :")
 import math
 if c == "+" :
-    print(int(a + b))
+    print(a + b)
 elif c == "-" :
-    print(math.ceil(int(a - b)))
+    print(a - b)
 elif c == "*" :
-    print(math.ceil(a * b))
+    print(a * b)
 elif c == "/" :
-    print(math.ceil(a / b))
+    print(a / b)
 elif c == "%" :
-    print(math.ceil(a % b))
+    print(a % b)
+elif c == "//":
+    print(a // b)
 
 # for num in range(2, 10):
 #     print("\t", num, end=" ")
